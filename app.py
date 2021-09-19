@@ -19,7 +19,7 @@ def index():
   return 'Hello'
 
 @APP.route('/hi')
-def index():
+def hi():
   return 'hi'
 
 if __name__ == '__main__':
