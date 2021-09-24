@@ -43,11 +43,14 @@ Permissions for Barista:
 ## Endpoints
 The following endpoints are in the app:
 
-- `/drinks (GET)`
-- `/drinks (POST)`
+- `authorization/url` (GET)
+
+- `/drinks` (POST)
+- `/drinks` (POST)
 - `/drinks-detail` (GET)
 - `/drinks/<id>` (PATCH)
 - `/drinks/<id>` (DELETE)
+- `/menus` (POST)
 
 
 ##  Models
