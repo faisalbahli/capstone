@@ -19,8 +19,8 @@ There are two created accounts assigned with two roles in this project:
 
 #### Manager (Authorized to all actions and endpoints)
 
-Email : barista.role@gmail.com
-Password: Capstone@1
+- Email : barista.role@gmail.com
+- Password: Capstone@1
 
 Permissions for Manager:
 
@@ -34,8 +34,8 @@ Description:
 
 #### Barista (Authorized to only GET /drinks-detail endpoint)
 
-Email : barista.role@gmail.com
-Password: Capstone@1 Permissions for Barista:
+- Email : barista.role@gmail.com
+- Password: Capstone@1 Permissions for Barista:
 
 Description:
 
