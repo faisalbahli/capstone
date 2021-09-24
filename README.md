@@ -30,6 +30,11 @@ Permissions for Manager:
 - `post:drinks` Create new drink
 - `post:menu` create new menu
 
+Authorized endpoint:
+
+- All Endpoints
+
+
 #### Barista (Authorized to only GET /drinks-detail endpoint)
 
 - Email : barista.role@gmail.com
@@ -38,6 +43,10 @@ Permissions for Manager:
 Permissions for Barista:
 
 - `get:drinks-detail` Get details about drink
+
+Authorized endpoint:
+
+- `/drinks-detail`
 
 
 ## Endpoints
