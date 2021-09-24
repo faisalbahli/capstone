@@ -6,14 +6,15 @@ https://capstone-final-0.herokuapp.com/
 
 
 ### APP with authoization only works with Postman
-There is endpoint to get authorized and get the access token from the URL to test it with Postman, which is:
+This is endpoint below will redirect you sign in page by Auth0. with the previously created accounts (check Roles And Accounts section), you can sign to get authorized and get the access token from the URL to test it with Postman
 
+Authoirzation URL:
 - `authorization/url` (GET)
 
 It will return access token from the URL which can be used in postman to access other endpoints.
 
 
-## Roles
+## Roles And Accounts
 
 There are two created accounts assigned with two roles in this project:
 
