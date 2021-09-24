@@ -17,7 +17,7 @@ It will return access token from the URL which can be used in postman to access 
 
 There are two created accounts assigned with two roles in this project:
 
-#### Manager (Authorized to all actions and endpoints)
+### Manager (Authorized to all actions and endpoints)
 
 - Email : barista.role@gmail.com
 - Password: Capstone@1
@@ -35,7 +35,7 @@ Authorized endpoint:
 - All Endpoints
 
 
-#### Barista (Authorized to only GET /drinks-detail endpoint)
+### Barista (Authorized to only GET /drinks-detail endpoint)
 
 - Email : barista.role@gmail.com
 - Password: Capstone@1
