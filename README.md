@@ -35,7 +35,9 @@ Description:
 #### Barista (Authorized to only GET /drinks-detail endpoint)
 
 - Email : barista.role@gmail.com
-- Password: Capstone@1 Permissions for Barista:
+- Password: Capstone@1
+
+Permissions for Barista:
 
 Description:
 
