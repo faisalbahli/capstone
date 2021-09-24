@@ -6,7 +6,7 @@ https://capstone-final-0.herokuapp.com/
 
 
 ### APP with authoization only works with Postman
-This is endpoint below will redirect you sign in page by Auth0. with the previously created accounts (check Roles And Accounts section), you can sign to get authorized and get the access token from the URL to test it with Postman
+This is endpoint below will redirect you sign in page by Auth0. with the previously created accounts (check Roles And Accounts section), you can sign to get authorized and get the access token from the URL to test it with Postman.
 
 Authoirzation URL:
 - `authorization/url` (GET)
@@ -29,7 +29,7 @@ Permissions for Manager:
 - `get:drinks-detail` Get details about drink
 - `patch:drinks` Modify drinks
 - `post:drinks` Create new drink
-- `post:menu` create new menu
+- `post:menu` Create new menu
 
 Authorized endpoint:
 
