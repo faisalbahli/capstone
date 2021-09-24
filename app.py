@@ -32,9 +32,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-  return"""
-<p><span style="font-size: 44px;">Welcome</span></p>
-<p>There are two created accounts assigned with two roles in this project:</p>
+  return""" <p><span style="font-size: 44px;">Welcome</span></p><p>There are two created accounts assigned with two roles in this project:</p>
 <p><strong>1- Manager (Authorized to all actions and endpoints)</strong></p>
 <ul>
     <li>Email : barista.role@gmail.com</li>

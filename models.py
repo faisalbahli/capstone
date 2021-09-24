@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv(dotenv_path='.env')
 
-database_path = "postgresql://faisal:4279@127.0.0.1:5432/coffee_shop" # os.getenv('DATABASE_URL')
+database_path = os.getenv('DATABASE_URL') # os.getenv('DATABASE_URL')
 print(database_path)
 db = SQLAlchemy()
 

@@ -29,3 +29,7 @@ The following endpoints are in the app:
 There is extra endpoint to get authorized and get the access token from the URL to test it if needed in Postman, which is:
 
 authorization/url (GET)
+
+### Test app locally
+
+run `python -m unittest discover -p test_app.py`
