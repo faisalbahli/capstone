@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv(dotenv_path='.env')
 
-database_path = "postgresql://faisal:4279@127.0.0.1:5432/capstone" # os.getenv('DATABASE_URL')
+database_path = "postgresql://faisal:4279@127.0.0.1:5432/coffee_shop" # os.getenv('DATABASE_URL')
 print(database_path)
 db = SQLAlchemy()
 
@@ -22,26 +22,66 @@ def setup_db(app, database_path=database_path):
     db.app = app
     db.init_app(app)
     # db.create_all()
-    #migrate = Migrate(app, db) # this
+    migrate = Migrate(app, db) # this
 
 
-'''
-Person
-Have title and release year
-'''
-class Person(db.Model):  
-  __tablename__ = 'People'
+class Drink(db.Model):
+    id = Column(Integer().with_variant(Integer, "sqlite"), primary_key=True)
+    title = Column(String(80))
+    recipe =  Column(String(180), nullable=False)
 
-  id = Column(Integer, primary_key=True)
-  name = Column(String)
-  catchphrase = Column(String)
+    def short(self):
+        print(json.loads(self.recipe))
+        short_recipe = [{'color': r['color'], 'parts': r['parts']} for r in json.loads(self.recipe)]
+        return {
+            'id': self.id,
+            'title': self.title,
+            'recipe': short_recipe
+        }
 
-  def __init__(self, name, catchphrase=""):
-    self.name = name
-    self.catchphrase = catchphrase
+    def long(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'recipe': json.loads(self.recipe)
+        }
+    def insert(self):
+        db.session.add(self)
+        db.session.commit()
 
-  def format(self):
-    return {
-      'id': self.id,
-      'name': self.name,
-      'catchphrase': self.catchphrase}
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+    def update(self):
+        db.session.commit()
+
+    def __repr__(self):
+        return json.dumps(self.short())
+
+
+class Menu(db.Model):
+    # Autoincrementing, unique primary key
+    id = Column(Integer().with_variant(Integer, "sqlite"), primary_key=True)
+    # String Title
+    name = Column(String(80))
+
+    def get_menu_name(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+        }
+
+    def insert(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+    def update(self):
+        db.session.commit()
+
+    def __repr__(self):
+        return json.dumps(self.short())
