@@ -10,8 +10,10 @@ https://capstone-final-0.herokuapp.com/
 - Virtual Enviornment - We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the python docs
 
 PIP Dependencies - Once you have your virtual environment setup and running, install dependencies by running the below command. This will install all of the required packages we selected within the requirements.txt file:
+
 `pip install -r requirements.txt`
 
+You may want to change the `.env` file and change the `DATABASE_URL` variable to connect to local database.
 
 The server can be started by running the following commands:
 ```
