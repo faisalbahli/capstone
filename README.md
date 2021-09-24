@@ -54,7 +54,7 @@ The following endpoints are in the app:
 
 - `authorization/url` (GET)
 
-- `/drinks` (POST)
+- `/drinks` (GET)
 - `/drinks` (POST)
 - `/drinks-detail` (GET)
 - `/drinks/<id>` (PATCH)
