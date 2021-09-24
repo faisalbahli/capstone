@@ -24,8 +24,6 @@ There are two created accounts assigned with two roles in this project:
 
 Permissions for Manager:
 
-Description:
-
 - `delete:drinks` Remove drinks
 - `get:drinks-detail` Get details about drink
 - `patch:drinks` Modify drinks
@@ -38,8 +36,6 @@ Description:
 - Password: Capstone@1
 
 Permissions for Barista:
-
-Description:
 
 - `get:drinks-detail` Get details about drink
 
