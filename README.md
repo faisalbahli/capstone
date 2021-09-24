@@ -4,9 +4,35 @@
 
 https://capstone-final-0.herokuapp.com/
 
+### dependencies 
+- Python 3.7 - Follow instructions to install the latest version of python for your platform in the python docs
+
+- Virtual Enviornment - We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the python docs
+
+PIP Dependencies - Once you have your virtual environment setup and running, install dependencies by running the below command. This will install all of the required packages we selected within the requirements.txt file:
+`pip install -r requirements.txt`
+
+
+The server can be started by running the following commands:
+```
+set FLASK_APP=app
+set FLASK_ENV=development
+set FLASK_DEBUG=True
+flask run
+```
+
+
+#### Key Dependencies
+
+- Flask is a lightweight backend microservices framework. Flask is required to handle requests and responses.
+
+- SQLAlchemy is the Python SQL toolkit and ORM we'll use handle the lightweight sqlite database. You'll primarily work in app.py and can reference models.py.
 
 ### APP with authoization only works with Postman
 This is endpoint below will redirect you sign in page by Auth0. with the previously created accounts (check Roles And Accounts section), you can sign to get authorized and get the access token from the URL to test it with Postman.
+
+
+
 
 Authoirzation URL:
 - `authorization/url` (GET)
@@ -48,6 +74,7 @@ Permissions for Barista:
 Authorized endpoint:
 
 - `/drinks-detail`
+
 
 
 ## Endpoints
