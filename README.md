@@ -4,9 +4,20 @@
 
 https://capstone-final-0.herokuapp.com/
 
+
+### APP with authoization only works with Postman
+There is endpoint to get authorized and get the access token from the URL to test it with Postman, which is:
+
+- `authorization/url` (GET)
+
+It will return access token from the URL which can be used in postman to access other endpoints.
+
+
+## Roles
+
 There are two created accounts assigned with two roles in this project:
 
-1- Manager (Authorized to all actions and endpoints)
+#### Manager (Authorized to all actions and endpoints)
 
 Email : barista.role@gmail.com
 Password: Capstone@1
@@ -21,7 +32,7 @@ Description:
 - `post:drinks` Create new drink
 - `post:menu` create new menu
 
-2- Barista (Authorized to only GET /drinks-detail endpoint)
+#### Barista (Authorized to only GET /drinks-detail endpoint)
 
 Email : barista.role@gmail.com
 Password: Capstone@1 Permissions for Barista:
@@ -30,6 +41,8 @@ Description:
 
 - `get:drinks-detail` Get details about drink
 
+
+## Endpoints
 The following endpoints are in the app:
 
 - `/drinks (GET)`
@@ -38,10 +51,19 @@ The following endpoints are in the app:
 - `/drinks/<id>` (PATCH)
 - `/drinks/<id>` (DELETE)
 
-There is extra endpoint to get authorized and get the access token from the URL to test it if needed in Postman, which is:
 
-- `authorization/url` (GET)
+##  Models
 
-### Test app locally
+### drink
+- id
+- title
+- recipe
+
+### Menu
+- id
+- name
+
+
+## Test app locally
 
 run `python -m unittest discover -p test_app.py`
