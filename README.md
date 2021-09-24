@@ -23,7 +23,6 @@ set FLASK_DEBUG=True
 flask run
 ```
 
-
 #### Key Dependencies
 
 - Flask is a lightweight backend microservices framework. Flask is required to handle requests and responses.
